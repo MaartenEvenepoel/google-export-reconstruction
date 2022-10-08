@@ -48,7 +48,10 @@ def main():
     print(f"Found {len(images)} images")
     print(f"Found {len(videos)} videos") 
 
+    print("processing images...")
     process_images(images, args.output_dir)
+
+    print("processing videos")
     process_videos(videos, args.output_dir)
 
     print("Done")

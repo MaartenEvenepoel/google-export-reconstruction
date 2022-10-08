@@ -1,11 +1,11 @@
 # Google Export Reconstruction
 Script that reconstructs a more time-accurate directory structure based for large Google Photos exports
 
+The script takes a source directory as input, recursively searches for all jpg and mp4 images in that source directory or any subdirectories. The discovered jpg and mp4 images are then written to a new output directory structure, with subdirectories for different years. Images are placed in these directories according to the time they were taken.
 
-## Activate Virtual Environment
+Videos are just moved to a seperate video subdirectories in the output directory.
 
-`$ source env/bin/activate`
+## Running the script
 
-## Run
+`$ python src/main.py /path/to/google-export-directory /path/to/destination-directory`
 
-`$ python src/main.py`
